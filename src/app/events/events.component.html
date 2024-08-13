@@ -1,0 +1,18 @@
+<div *ngIf="error" class="error-message">
+  {{ error }}
+</div>
+
+<div *ngIf="!error">
+  <h3>Top 100 Movies</h3>
+  <div class="movie-grid">
+    <div class="movie-card" *ngFor="let movie of topMovies">
+      <img [src]="movie.image" alt="{{ movie.title }}" class="movie-poster"/>
+      <div class="movie-info">
+        <h4>{{ movie.title }}</h4>
+        <p>Year: {{ movie.year }}</p>
+        <p>Rating: {{ movie.rating }}</p>
+      </div>
+    </div>
+  </div>
+  <p *ngIf="topMovies.length === 0">No movies found.</p>
+</div>

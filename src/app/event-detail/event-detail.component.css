@@ -1,0 +1,13 @@
+.event-detail {
+    text-align: center;
+  }
+  
+  .event-detail h3 {
+    color: #333;
+  }
+  
+  .event-detail p {
+    color: #666;
+    margin: 5px 0;
+  }
+  
